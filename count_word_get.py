@@ -7,3 +7,10 @@ for line in handle:
         counts[word] = counts.get(word, 0) + 1
 print('Number of words fox: ', counts.get('fox', 0))
 print('Number of every word as dictionary: ', counts)
+bigcount = None
+bigword = None
+for word, count in counts.items():
+    if bigcount is None or count > bigcount:
+        bigword = word 
+        bigcount = count
+print(bigword, bigcount)
