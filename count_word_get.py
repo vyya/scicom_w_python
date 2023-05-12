@@ -19,3 +19,6 @@ for word, count in counts.items():
     tmp.append((count, word))
 tmp = sorted(tmp, reverse=True)
 print(f"Here is the descending word frequency in a given text: {tmp}")
+for count, word in tmp[:5]:
+    print(word, count)
+    
